@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema ({
     cartId : {required : true, type:mongoose.Schema.Types.ObjectId},
     typeofuser : String,
     age : Number,
-    last_name: string
+    last_name : String
 })
 
 export const userModel = mongoose.model (usersCollection, userSchema)

@@ -98,7 +98,9 @@ usernameField:'email', passReqToCallback : true
 
 passport.use('loginGitHub', new GitHubStrategy.Strategy({
 
-  clientID:'Iv1.70ce45700889066b',
+ 
+
+  callbackURL:'http://localhost:8080/api/sesions/callbackGithub'
   
   // aqui se deben colocar los datos del cliente id y client secret 
   
