@@ -101,6 +101,8 @@ passport.use('loginGitHub', new GitHubStrategy.Strategy({
  
 
   callbackURL:'http://localhost:8080/api/sesions/callbackGithub'
+
+
   
   // aqui se deben colocar los datos del cliente id y client secret 
   
@@ -112,7 +114,7 @@ passport.use('loginGitHub', new GitHubStrategy.Strategy({
          
       if(!usuario) {
         let typeofuser='user'
-        usuario = await managermd.crearUsuario (profile._json.name,profile._json.email,'github',typeofuser,profile._json.lastnaame,profile._json.age)
+        usuario = await managermd.crearUsuario (profile._json.name,profile._json.email,'github',typeofuser)
         
         return done (null,usuario)
       } else {

@@ -156,12 +156,12 @@ router.get('/registro',auth2,  (req,res)=>{
 router.get('/current',auth,  (req,res)=>{
   mostrarMenu0=true;
   mostrarMenu1=false;
-  mostrarMenu2=true;
-  mostrarMenu3=true;
+  mostrarMenu2=false;
+  mostrarMenu3=false;
   mostrarMenu4=false;
-  mostrarMenu5=false;
-  mostrarMenu6=false;
-  mostrarMenu7=false;
+  mostrarMenu5=true;
+  mostrarMenu6=true;
+  mostrarMenu7=true;
 
   let name=req.user.name
   let last_name= req.user.last_name

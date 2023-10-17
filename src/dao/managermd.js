@@ -114,7 +114,6 @@ obtenerProductos : async  (combinedFilter, options) =>
     return (products);
   } catch (error) {
     console.error({ status: 'error', message: 'Error en el servidor',error });
-    console.error(error)
   }
 },
 
@@ -270,6 +269,7 @@ crearUsuario : async (name,email,password,typeofuser,last_name,age) =>
 
    }
    catch (error) {
+    console.error('*error en el servidor*');
     console.error(error);
     }
 }
